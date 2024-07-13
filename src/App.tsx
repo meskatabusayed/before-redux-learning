@@ -3,6 +3,7 @@
 // import { useState } from "react";
 
 import TodoForm from "./components/todo/todoForm";
+import TodoList from "./components/todo/todoList";
 import TodoProvider from "./context/todoProvider";
 
 // import UserinfoWithUseReducer from "./components/UserInfoWithUseReducer"
@@ -25,6 +26,7 @@ function App() {
      {/* <UserinfoWithUsestate/> */}
      {/* <UserinfoWithUseReducer/> */}
      <TodoForm/>
+     <TodoList/>
     </div>
     </TodoProvider>
   )
