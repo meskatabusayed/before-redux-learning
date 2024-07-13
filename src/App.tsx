@@ -2,7 +2,10 @@
 // import CounterWithFuncComponent from "./components/counterWithFuncComponent"
 // import { useState } from "react";
 
-import UserinfoWithUseReducer from "./components/UserInfoWithUseReducer"
+import TodoForm from "./components/todo/todoForm";
+import TodoProvider from "./context/todoProvider";
+
+// import UserinfoWithUseReducer from "./components/UserInfoWithUseReducer"
 
 
 
@@ -14,13 +17,16 @@ function App() {
   // const [count , setCount]  = useState(0);
 
   return (
-    <div className="border border-purple-500 p-10 m-10">
+    <TodoProvider>
+    <div>
      {/* <CounterWithClass/> */}
      {/* <h1>Count = {count}</h1>
      <CounterWithFuncComponent count = {count} setCount = {setCount}/> */}
      {/* <UserinfoWithUsestate/> */}
-     <UserinfoWithUseReducer/>
+     {/* <UserinfoWithUseReducer/> */}
+     <TodoForm/>
     </div>
+    </TodoProvider>
   )
 }
  
