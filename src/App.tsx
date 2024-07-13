@@ -1,4 +1,5 @@
-import CounterWithClass from "./components/counterWithClassComponent"
+// import CounterWithClass from "./components/counterWithClassComponent"
+import CounterWithFuncComponent from "./components/counterWithFuncComponent"
 
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <div>
-     <CounterWithClass/>
+     {/* <CounterWithClass/> */}
+     <CounterWithFuncComponent/>
     </div>
   )
 }
